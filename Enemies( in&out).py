@@ -6,12 +6,19 @@ class Enemy(object):
         self.damage = damage 
         
 class infecteds(Enemy):
-    def __init__(self, name = "Infected", health = 50, damage = 10):
+    def __init__(self, name = "Infected", health = 500, damage = 10):
         super(infecteds, self).__init__(name = "Infected", health = 50 , damage = 10)
         
         
     def race(self):
         print "Run!!! %s are right behind you" % self.name 
+        
+class zombie(Enemy):
+    def __init__(self, name = "Zombie", health = 1000, damage = 25):
+        super(zombie, self).__init__( name = "Zombie", health = 1000, damage = 25)
+        
+    def run(self):
+        print "%s are much faster and cause more damage." % self.name
         
         
         
@@ -25,12 +32,10 @@ class single_player(player):
     def __init__(self, name, health = 50000):
         super(single_player, self).__init__(name, health = 50000)
         
-        def 
+
         
         
-bug = Enemy()
-human = player()
-        
+
         
 
     
