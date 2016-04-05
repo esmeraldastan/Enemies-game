@@ -21,7 +21,8 @@ class zombie(Enemy):
         print "%s are much faster and cause more damage." % self.name
         
         
-        
+command = raw_input('>')
+print ' do you want to restore health. Type restore'        
 class player(object):
     
     def __init__(self, name, health):
@@ -34,8 +35,27 @@ class single_player(player):
         
 
         
+
+
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+        
+class Consumable(Item):
+    
+    def __init__(self, name, health):
+        super(Consumable, self).__init__(name)
+        self.health = health
+        
+class health_potion(Consumable):
+    def __init__(self, name, health = 200):
+        super(health_potion, self).__init__(name, health = 200)
         
 
+        
+ 
+if command == 'restore':
+    health_potion(self.health) + single_player(self.health)
         
 
     
