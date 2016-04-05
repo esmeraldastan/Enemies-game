@@ -52,10 +52,12 @@ class health_potion(Consumable):
         super(health_potion, self).__init__(name, health = 200)
         
 
-        
+a = health_potion('Blue potion', 3000)
+b = single_player('Billy Bob')        
  
 if command == 'restore':
-    health_potion(self.health) + single_player(self.health)
+    new_health = a.health + b.health
+    print new_health
         
 
     
