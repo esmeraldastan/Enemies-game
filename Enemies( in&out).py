@@ -1,4 +1,4 @@
-print ' do you want to restore health. Type restore'     
+#print ' do you want to restore health. Type restore'     
 
 class Enemy(object):
     
@@ -23,7 +23,7 @@ class zombie(Enemy):
         print "%s are much faster and cause more damage." % self.name
         
         
-command = raw_input('>')
+#command = raw_input('>')
    
 class player(object):
     
@@ -35,7 +35,7 @@ class single_player(player):
     def __init__(self, name, health = 50000):
         super(single_player, self).__init__(name, health = 50000)
         
-
+me = single_player(player)
         
 
 
@@ -57,9 +57,9 @@ class health_potion(Consumable):
 a = health_potion(Consumable)
 b = single_player(Consumable)        
  
-if command == 'restore':
-    new_health = a.health + b.health
-    print new_health
+#if command == 'restore':
+    #new_health = a.health + b.health
+    #print new_health
         
 
     
